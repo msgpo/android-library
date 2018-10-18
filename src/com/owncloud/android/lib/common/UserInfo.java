@@ -23,6 +23,8 @@ import com.google.gson.annotations.SerializedName;
 
 import org.parceler.Parcel;
 
+import java.util.ArrayList;
+
 /**
  * User information data model
  */
@@ -47,6 +49,8 @@ public class UserInfo {
     public String twitter;
     @SerializedName("quota")
     public Quota quota;
+    @SerializedName("groups")
+    public ArrayList<String> groups;
 
     public UserInfo() {
     }
